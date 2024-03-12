@@ -17,7 +17,7 @@ function playGame(times){
     let words = ["rock", "paper", "scissors"];
     
     for (let i=0; i<times; i++){
-        const playerSelection = prompt("Rock paper scissor");
+        const playerSelection = prompt("Rock paper scissor").toLowerCase();
         const computerSelection = getComputerChoice(words);
         let result = playRound(playerSelection, computerSelection);
         if (result){
